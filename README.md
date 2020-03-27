@@ -32,10 +32,12 @@
   </ul>
 </div>
 
-<h3>Download Hadith data</h3>
+<h3>Download data</h3>
 <p>We have compiled a Hadith database with the purpose of spreading knowlege of Hadith. The database should be used by developers in their own applications. The Hadith database contains text in Urdu, English and Arabic languages.</p>
 
 <p><a href='https://islamcompanion.pakjiddat.pk/islamcompanion/data/hadith.sql.tar.bz2'>Click here</a> to download the Hadith database in <b>.sql</b> format for MySQL server. <a href='https://islamcompanion.pakjiddat.pk/islamcompanion/data/hadith.db.tar.bz2'>Click here</a> to download the Hadith database in <b>.db</b> format for SQLite server</p>
+
+<p><a href='https://islamcompanion.pakjiddat.pk/islamcompanion/data/holy-quran.db.tar.bz2'>Click here</a> to download the Quranic database in <b>.db</b> format for SQLite server</p>
 
 <h3>Frequently asked questions</h3>
 <div>
@@ -44,7 +46,7 @@
     <li><b>What can I do with the Islam Companion Web API</b>. You can develop web based applications that present Holy Quran and Hadith data to the user. The Islam Companion Api can work as the backend of your application.</li>
     <li><b>Which languages are supported by the Islam Companion Web API</b>. <a href="#introduction">Click Here</a></li>
     <li><b>What functions are provided by the Islam Companion Api</b>. Please read the documentation.</li>
-    <li><b>From where does the API get its data</b>. The Islam Companion API uses Holy Quran translations from <a href='http://tanzil.net/trans/'>http://tanzil.net/trans/</a>. It uses Hadith data from <a href='http://hadithcollection.com/'>http://hadithcollection.com/</a>.</li>
+    <li><b>From where does the API get its data</b>. The Islam Companion API uses Holy Quran translations from <a href='http://tanzil.net/trans/'>http://tanzil.net/trans/</a>. It uses Hadith data from <a href='http://hadithcollection.com/'>http://hadithcollection.com/</a> and <a href='https://www.quranurdu.com/Ahadith/'>https://www.quranurdu.com/Ahadith/</a>.</li>
     <li><b>How do I use the API</b>. To use the API, you have to make HTTP POST request to the server islamcompanion.pakjiddat.pk. Please see following sample code in Php language.</li>
   </ul>
 </div>
