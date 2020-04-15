@@ -1,7 +1,6 @@
-<p><img class="img-fluid" src="https://www.pakjiddat.pk/pakjiddat/ui/images/islamcompanion-web-api.png" alt="Islam Companion Web API"/></p>
+<p><img class="img-fluid" src="https://pakjiddat.netlify.com/static/ed1e88d660a0dc995571f96e768b4988/21482/islamcompanion-web-api.png" alt="Islam Companion Web API"/></p>
 <h3>Introduction</h3>
 <p>The "<b>Islam Companion Web API</b>" project is a RESTFul API (Application Programming Interface) that allows users to add Holy Quran and Hadith data to their applications. It provides Holy Quran translation in 42 languages. Following languages are supported: <b>Amharic, Arabic, Bosnian, Bengali, Bulgarian, Amazigh, Czech, German, Divehi, Spanish, English, Persian, French, Hindi, Hausa, Indonesian, Italian, Japanese, Korean, Kurdish, Malayalam, Malay, Dutch, Norwegian, Portuguese, Polish, Russian, Romanian, Swedish, Somali, Sindhi, Albanian, Swahili, Turkish, Tajik, Tamil, Tatar, Thai, Uzbek, Urdu, Uyghur and Chinese</b>. Hadith translation is provided in <b>Urdu, English and Arabic languages</b></p>
-<p>An example of a website that uses the Islam Companion Web API is the <a href='https://islamcompanion.pakjiddat.pk/'>Islam Companion website</a>. The <a href='https://islamcompanion.pakjiddat.pk/holy-quran'>Holy Quran Reader</a> and <a href='https://islamcompanion.pakjiddat.pk/hadith'>Hadith Reader</a> were developed using the Islam Companion Web API</p>
 <p>The goal of the Islam Companion Web API is to help users developed applications that promote knowledge about Islam.</p>
 <h3>Features</h3>
 <p>The Islam Companion Web API has the following features:</p>
@@ -23,7 +22,7 @@
   <ul>
     <li>Download the <a href='https://github.com/nadirlc/islamcompanion-web-api/archive/master.zip'>source code</a> from GitHub</li>
     <li>Move the source code to the document root of a virtual host</li>
-    <li>Download the contents of the database from: <a href='https://islamcompanion.pakjiddat.pk/islamcompanion/data/islamcompanion-website.sql.tar.bz2'>here</a></li>
+    <li>Download the contents of the database from: <a href='https://drive.google.com/open?id=1Lq0xjVPiTso1io-uhKxz7aT7McIlBwj6'>here</a></li>
     <li>Extract the downloaded file</li>
     <li>Create a database and import the contents of the sql file to the database. Note down the credentials used for connecting to the database</li>
     <li>Enter the database credentials in the file <b>api/config/RequiredObjects.php</b></li>
@@ -35,9 +34,9 @@
 <h3>Download data</h3>
 <p>We have compiled a Hadith database with the purpose of spreading knowlege of Hadith. The database should be used by developers in their own applications. The Hadith database contains text in Urdu, English and Arabic languages.</p>
 
-<p><a href='https://islamcompanion.pakjiddat.pk/islamcompanion/data/hadith.sql.tar.bz2'>Click here</a> to download the Hadith database in <b>.sql</b> format for MySQL server. <a href='https://islamcompanion.pakjiddat.pk/islamcompanion/data/hadith.db.tar.bz2'>Click here</a> to download the Hadith database in <b>.db</b> format for SQLite server</p>
+<p><a href='https://drive.google.com/open?id=1gd8B0C-N7LcppMNikv1FNQoL_XJ2nuQv'>Click here</a> to download the Hadith database in <b>.sql</b> format for MySQL server. <a href='https://drive.google.com/open?id=1pHo5auUuKiNEi9jlmQJ0-n3oqDEdbDR0'>Click here</a> to download the Hadith database in <b>.db</b> format for SQLite server</p>
 
-<p><a href='https://islamcompanion.pakjiddat.pk/islamcompanion/data/holy-quran.db.tar.bz2'>Click here</a> to download the Quranic database in <b>.db</b> format for SQLite server</p>
+<p><a href='https://drive.google.com/open?id=11a_dQ4i0__--x5PkFjlmwMUxgMdTWbIa'>Click here</a> to download the Quranic database in <b>.db</b> format for SQLite server</p>
 
 <h3>Frequently asked questions</h3>
 <div>
@@ -47,7 +46,7 @@
     <li><b>Which languages are supported by the Islam Companion Web API</b>. <a href="#introduction">Click Here</a></li>
     <li><b>What functions are provided by the Islam Companion Api</b>. Please read the documentation.</li>
     <li><b>From where does the API get its data</b>. The Islam Companion API uses Holy Quran translations from <a href='http://tanzil.net/trans/'>http://tanzil.net/trans/</a>. It uses Hadith data from <a href='http://hadithcollection.com/'>http://hadithcollection.com/</a> and <a href='https://www.quranurdu.com/Ahadith/'>https://www.quranurdu.com/Ahadith/</a>.</li>
-    <li><b>How do I use the API</b>. To use the API, you have to make HTTP POST request to the server islamcompanion.pakjiddat.pk. Please see following sample code in Php language.</li>
+    <li><b>How do I use the API</b>. To use the API, you have to make HTTP POST request to your web server. Please see following sample code in Php language.</li>
   </ul>
 </div>
 
@@ -62,7 +61,7 @@ $data = array(
 );
  
 // Prepare new cURL resource
-$ch = curl_init('https://islamcompanion.pakjiddat.pk/api/get_random_verses');
+$ch = curl_init('[your-website-name]/api/get_random_verses');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLINFO_HEADER_OUT, true);
 curl_setopt($ch, CURLOPT_POST, true);
@@ -84,7 +83,7 @@ print_r($result);
 
 <h3>Usage</h3>
 <p>The Islam Companion Web API supports the following functions. All function response values are in JSON format.</p>
-<p>To test the API, use the following url: <a href='https://islamcompanion.pakjiddat.pk/api/'>https://islamcompanion.pakjiddat.pk/api/</a> for making API requests. All API requests must be of type HTTP POST and should include the required API parameters.</p>
+<p>To test the API, use the following url: <a href='[your-server]/api/'>[your-server]/api/</a> for making API requests. All API requests must be of type HTTP POST and should include the required API parameters.</p>
 
 <h3>API calls for fetching Holy Quran data</h3>
 
